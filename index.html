@@ -1,0 +1,92 @@
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+ <!DOCTYPE html> 
+ <html xmlns="http://www.w3.org/1999/xhtml"> 
+ <head> 
+ <title>Quadratic Equation Solver</title> 
+   
+ <script src="mathml.js"></script> 
+ <style media="screen" type="text/css"> 
+ math.size_1 { font-size: 1em } 
+  
+ math.size_2 { font-size: 2em } 
+  
+ math.size_3 { font-size: 3em } 
+  
+ math.size_4 { font-size: 4em } 
+  
+ math.size_5 { font-size: 5em } 
+  
+ math .constant { font-weight: bold } 
+  
+ .a { color: red } 
+  
+ .b { color: green } 
+  
+ .c { color: blue } 
+  
+ .dot_operator { color: gray } 
+  
+ #a:focus { background-color: #F2B1B7 } 
+  
+ #b:focus { background-color: #96CF91 } 
+  
+ #c:focus { background-color: #B59EF7 } 
+  
+ span.button { 
+ border-radius: 3px; 
+ border: 1px solid black; 
+ padding: 1px 1px 1px 1px; 
+ font-size: 2em; 
+ background-color: #C0C0C0; 
+ cursor:pointer; 
+ } 
+  
+ 
+  
+ form#formula_values { 
+ padding: 10px; 
+ border: 1px solid black; 
+ width: 400px; 
+  background-color: #00aabb; 
+
+ } 
+  
+ #error_log { color: red; } 
+ </style> 
+ </head> 
+ <body> 
+ 
+
+ 
+ <form id="formula_values" action="findx.php" method="post"> 
+    <h1>Quadratic Equation Solver</h1> 
+<p>Quadratic equations can be written in the form :</p> 
+ <math xmlns="http://www.w3.org/1998/Math/MathML" class="size_3 resizable" id="quadratic_equation"> 
+ <mrow> 
+ <mi class="constant a">a</mi> 
+ <msup> 
+ <mi>x</mi> 
+ <mn>2</mn> 
+ </msup> 
+ <mo>+</mo> 
+ <mi class="constant b">b</mi> 
+ <mi>x</mi> 
+ <mo>+</mo> 
+ <mi class="constant c">c</mi> 
+ <mo>=</mo> 
+ <mn>0</mn> 
+ </mrow> 
+ </math>
+ <p>Enter integer values for <span class="a">a</span>, <span class="b">b</span>, and <span class="c">c</span> to solve a quadratic equation :</p>  
+ <p><label for="a" name="a" class="a"><em>a:</em></label> 
+ <input id="a" name="a" size="3"/> 
+ <label for="b" name="b" class="b"><em>b:</em></label> 
+ <input id="b" name="b" size="3"/>  
+ <label for="c" name="c" class="c"><em>c:</em></label> 
+ <input id="c"  name="c" size="3"/>  
+ <p><input id="solve_button" type="submit" value="Solve equation"/></p> 
+ 
+ </form> 
+ </body> 
+ </html> 
